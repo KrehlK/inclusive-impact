@@ -1,1 +1,1 @@
-# inclusive-impact
+# UMD Inclusive Impact Initiative
