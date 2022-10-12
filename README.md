@@ -76,3 +76,6 @@ This is a list of what needs to be improved on the current state of the website,
 * Chika Chuku
 * Katherine Vo
 * Emily Zheng
+
+
+##joyce 
