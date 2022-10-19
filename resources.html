@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/resources.css">
+
+    <title>UMD Inclusive Impact</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="navbar fixed-top" style="background-color: #FF3B30;">
+        <div class="container justify-content-center">
+            <h5 class="text-center">
+                <a href ="index.html" style="text-decoration:none;color: white;"><i>UMD Inclusive Impact</i></a>
+            </h5>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mt-5 p-0" style="background-color: #FFF5F5;">
+        <button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="careerservices.html">Career Services</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="findevents.html">Find Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col" style="padding-top: 25px;">
+                <h2>Resources</h2>
+            </div>
+            <div class="col" style="padding-top: 25px;">
+                <!-- Search -->
+                <form class="form-inline d-flex justify-content-end">
+                    <input class="form-control mr-4" type="search" id="myInput" onkeyup="searchFunction()" placeholder="Search for resources" aria-label="Search for resources">
+                    <!-- Filter embeded in the Search code so that the buttons appear side by side -->
+                    <div class="dropdown show">
+                        <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter
+                        </a>
+                    
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="filterContainer">
+                            <a class="dropdown-item active" onclick="filterSelection('all');">All</a>
+                            <a class="dropdown-item" onclick="filterSelection('education');">Education</a>
+                            <!-- <a class="dropdown-item" onclick="filterSelection('employment');">Employment</a> -->
+                            <a class="dropdown-item" onclick="filterSelection('family');">Family & Employment</a>
+                            <a class="dropdown-item" onclick="filterSelection('housing');">Housing</a>
+                            <a class="dropdown-item" onclick="filterSelection('healthcare');">Healthcare</a>
+                            <a class="dropdown-item" onclick="filterSelection('transportation');">Transportation</a>
+                            <a class="dropdown-item" onclick="filterSelection('entrepreneurship');">Entrepreneurship</a>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- end col -->
+        </div><!--end row-->
+
+        <!-- CARDS -->
+        <div class="container mt-3">
+            <div class="row row-cols-1 row-cols-sm-3 mb-4" id="myList">
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv healthcare housing">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/backs-friends.jpeg" alt="4H Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">4H Programming</h5>
+                            <p><span class="badge badge-pill badge-danger mr-2">Healthcare</span><span class="badge badge-pill badge-info">Housing</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://extension.umd.edu/programs/4-h-youth-development" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/AA-student-program.png" alt="AAP: Educational Opportunity Center Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">AAP: Educational Opportunity Center</h5>
+                            <p><span class="badge badge-pill badge-primary">Education</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://aap.umd.edu/stp-overview.html" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/friends-together.jpeg" alt="AAP: Summer Transition Program Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">AAP: Summer Transition Program</h5>
+                            <p><span class="badge badge-pill badge-primary">Education</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://aap.umd.edu/stp-overview.html" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/group-hug.jpeg" alt="AAP: Talent Search Program Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">AAP: Talent Search Program</h5>
+                            <p><span class="badge badge-pill badge-primary">Education</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://aap.umd.edu/stp-overview.html" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv housing">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/lecture-students.jpeg" alt="Affordable Housing Research Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Affordable Housing Research</h5>
+                            <span class="badge badge-pill badge-info">Housing</span>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://www.umdsmartgrowth.org/" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education transportation">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/computer-lab.jpeg" alt="African American History, Culture and Digital Humanities Initiative Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">African American History, Culture and Digital Humanities Initiative</h5>
+                            <p><span class="badge badge-pill badge-primary mr-2">Education</span><span class="badge badge-pill badge-dark">Transportation</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://aadhum.umd.edu" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/computer-lab.jpeg" alt="SPAN374 Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">After School Tutoring through a UMD Course: SPAN374- Spanish in the Community</h5>
+                            <p><span class="badge badge-pill badge-primary">Education</span>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="http://sllc.umd.edu/spanish/undergraduate/specialtopics" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv healthcare housing">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/elementary-schoolers.jpeg" alt="Alternative Breaks Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Alternative Breaks</h5>
+                            <p><span class="badge badge-pill badge-danger mr-2">Healthcare</span><span class="badge badge-pill badge-info">Housing</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://stamp.umd.edu/lcsl/programs/alternative_breaks/learn_more_about_us" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education healthcare housing">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/judge-center.jpeg" alt="Aquaculture Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Aquaculture in Action</h5>
+                            <p><span class="badge badge-pill badge-primary mr-2">Education</span><span class="badge badge-pill badge-danger mr-2">Healthcare</span><span class="badge badge-pill badge-info">Housing</span></p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://www.mdsg.umd.edu/topics/k-12-aquaculture-education/k-12-aquaculture-education" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv family entrepreneurship housing transportation">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/lecture-students.jpeg" alt="ARCH School Research Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">ARCH School Research into Anti-Displacement</h5>
+                            <p><span class="badge badge-pill badge-secondary mr-2">Family & Employment</span>
+                                <span class="badge badge-pill badge-success mr-2">Entrepreneurship</span>
+                                <span class="badge badge-pill badge-info mr-2">Housing</span>
+                                <span class="badge badge-pill badge-dark">Transportation</span>
+                            </p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://arch.umd.edu/people/willow-lung-amam" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/man-working.jpeg" alt="Architecture Program Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Architecture Program Design Studios</h5>
+                            <p><span class="badge badge-pill badge-primary">Education</span>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://arch.umd.edu/" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-12 col-sm-4 mb-4 filterDiv family entrepreneurship transportation">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/medical.jpeg" alt="BALTO Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">BALTO</h5>
+                            <p><span class="badge badge-pill badge-secondary mr-2">Family & Employment</span>
+                                <span class="badge badge-pill badge-success mr-2">Entrepreneurship</span>
+                                <span class="badge badge-pill badge-dark">Transportation</span>
+                            </p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://balto.umd.edu" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--end row-->
+        </div><!--end cards container-->
+
+        <!--PAGINATION-->
+        <nav class="justify-content-center" aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+
+    </div><!--end CONTENT container-->
+
+    <!--FOOTER-->
+    <footer class="mt-5" style="background-color: #f7f7f7;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col">
+                    <h6>University of Maryland Inclusive Impact</h6>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <a href="mailto: spopat@umd.edu" class="btn btn-outline-dark">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/resources.js"></script><!--Filtering function-->
+  </body>
+</html>

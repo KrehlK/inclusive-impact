@@ -1,0 +1,34 @@
+/* --------------- About page --------------- */
+.icon {
+    size-adjust: 10px;
+}
+
+/* Background image */
+.about-bg { 
+    opacity: 0.8;
+    background: url(assets/img/about/umd-building.jpeg) top/cover no-repeat;
+}
+
+/* Add rounded edges to image */
+#our-comm { 
+    border-radius: 12px;
+}
+
+/* Resize the logos of partners smaller */
+#logo { 
+    width: 120px;
+}
+
+/* --------------- Find events page --------------- */
+/* Background image */
+.events-bg { 
+    opacity: 0.8;
+    background: url(assets/img/events/campus-blue-skies.jpeg) top/cover no-repeat;
+}
+
+/* Lower opacity of images */
+.card-img-top { 
+    opacity: 0.8;
+}
+
+/* --------------- Career Services page --------------- */
