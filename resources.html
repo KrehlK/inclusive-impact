@@ -10,7 +10,10 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/resources.css">
 
+    <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="utf-8"></script>
+    <!-- Translate API -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <title>UMD Inclusive Impact</title>
   </head>
@@ -18,6 +21,7 @@
   <body>
     <!-- HEADER -->
     <div class="navbar fixed-top" style="background-color: #FF3B30;">
+        <div id='google_translate_element'></div>
         <div class="container justify-content-center">
             <h5 class="text-center">
                 <a href ="index.html" style="text-decoration:none;color: white;"><i>UMD Inclusive Impact</i></a>
@@ -268,11 +272,11 @@
                 <!-- Card 14 -->
                 <div class="col-12 col-sm-4 mb-4 filterDiv transportation">
                     <div class="card">
-                        <img class="card-img-top" src="assets/img/resources/wia_logo.png" alt="Wia Photo">
+                        <img class="card-img-top" src="assets/img/resources/man-working.jpeg" alt="Wia Photo">
                         <div class="card-body">
                             <h5 class="card-title">Broadband Deployment Advisory Committee at FCC </h5>
                             <p>
-                                <span class="badge badge-pill badge-success mr-2">Transportation</span>
+                                <span class="badge badge-pill badge-dark">Transportation</span>
                             </p>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                             <a href="https://wia.org/" class="btn btn-dark" target="_blank">Learn More</a>
@@ -283,14 +287,68 @@
                 <!-- Card 15 -->
                 <div class="col-12 col-sm-4 mb-4 filterDiv family">
                     <div class="card">
-                        <img class="card-img-top" src="assets/img/resources/wia_logo.png" alt="Wia Photo">
+                        <img class="card-img-top" src="assets/img/resources/man-working.jpeg" alt="Wia Photo">
                         <div class="card-body">
                             <h5 class="card-title">DGI: Impact Interns Program</h5>
                             <p>
-                                <span class="badge badge-pill badge-success mr-2">Family</span>
+                                <span class="badge badge-pill badge-secondary mr-2">Family & Employment</span>
                             </p>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                             <a href="https://dogood.umd.edu/news/update-our-community-diversity-inclusion-and-belonging-commitment-progress" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 16-->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/man-working.jpeg" alt="Wia Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Science, Tech & Society in Scholars</h5>
+                            <p>
+                                <span class="badge badge-pill badge-secondary mr-2">Family & Employment</span>
+                            </p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://scholars-d8.umd.edu/programs/science-technology-and-society" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 17-->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education entrepreneurship housing healthcare family transportation">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/man-working.jpeg" alt="Wia Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Partnership for Action Learning in Sustainability</h5>
+                            <p>
+                                <span class="badge badge-pill badge-primary">Education</span>
+                                <span class="badge badge-pill badge-success mr-2">Entrepreneurship</span>
+                                <span class="badge badge-pill badge-secondary mr-2">Family & Employment</span>
+                                <span class="badge badge-pill badge-info mr-2">Housing</span>
+                                <span class="badge badge-pill badge-danger mr-2">Healthcare</span>
+                                <span class="badge badge-pill badge-dark">Transportation</span>
+                            </p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://www.umdsmartgrowth.org/programs/pals/" class="btn btn-dark" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 18-->
+                <div class="col-12 col-sm-4 mb-4 filterDiv education entrepreneurship housing healthcare family">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/resources/man-working.jpeg" alt="Wia Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Minor in International Development and Conflict Management</h5>
+                            <p>
+                                <span class="badge badge-pill badge-primary">Education</span>
+                                <span class="badge badge-pill badge-success mr-2">Entrepreneurship</span>
+                                <span class="badge badge-pill badge-secondary mr-2">Family & Employment</span>
+                                <span class="badge badge-pill badge-info mr-2">Housing</span>
+                                <span class="badge badge-pill badge-danger mr-2">Healthcare</span>
+                            </p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <a href="https://cidcm.umd.edu/landing/MIDCM" class="btn btn-dark" target="_blank">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -311,86 +369,6 @@
         </div> 
 
     </div><!--end CONTENT container-->
-
-
-    <!-- This is optional JQuery for Pagination-->
-    <!-- <script type = "text/javascript">
-        function getPageList(totalPages, page, maxLength) {
-            function range(start, end){
-                return Array.from(Array(end - start + 1), (_, i) => i + start);
-            }
-
-            var sideWidth = maxLength < 9 ? 1 : 2;
-            var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-            var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-            
-            if(totalPages <= maxLength){
-                return range(1, totalPages);
-            }
-
-            if(page <= maxLength - sideWidth -1 - rightWidth){
-                return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
-            }
-
-            if(page >= totalPages - sideWidth - 1 - rightWidth){
-                return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages));
-            }
-
-            return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
-
-        }
-
-
-        $(function(){
-            var numberOfItems = $(".row .card").length;
-            var limitPerPage = 3; // Cards Visible Per Page
-            var totalPages = Math.ceil(numberOfItems / limitPerPage);
-            var paginationSize = 7; // Page elements visible in the Pagination
-            var currentPage;
-
-            function showPage(whichPage) {
-                if(whichPage < 1 || whichPage > totalPages) return false;
-
-                currentPage = whichPage;
-
-                $(".row .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
-
-
-                $(".pagination li").slice(1, -1).remove();
-
-                getPageList(totalPages, currentPage, paginationSize).forEach(item => {
-                    $("<li>").addClass("page-item").addClass("current-page")
-                        .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
-                            .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
-                });
-
-                $(".previous-page").toggleClass("disable", currentPage === 1);
-                $(".next-page").toggleClass("disable", currentPage === totalPages);
-                return true;
-            }
-
-            $(".pagination").append(
-                $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
-                $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
-            );
-
-            $(".row").show();
-            showPage(1);
-
-            $(document).on("click", ".pagination li.current-page:not(.active)", function(){
-                return showPage(+$(this).text());
-            });
-
-            $(".next-page").on("click", function(){
-                return showPage(currentPage + 1);
-            });
-
-            $(".previous-page").on("click", function(){
-                return showPage(currentPage - 1);
-            });
-        });
-    </script> -->
-
 
     <!--FOOTER-->
     <footer class="mt-5" style="background-color: #f7f7f7;">
@@ -421,5 +399,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/resources.js"></script><!--Filtering function-->
     <script src="./assets/js/showPage.js"></script> <!--Go through the next set of resources-->
+    <script src="./assets/js/translate.js"></script> <!--Translate Page JS-->
   </body>
 </html>
