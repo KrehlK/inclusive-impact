@@ -1,8 +1,6 @@
 # UMD Inclusive Impact
 ## Description
 
-Previously known as "UMD Inclusive Growth" for INST490 Spring 2022 Capstone.
-
 The UMD Inclusive Impact Website is dedicated to compiling a hub of resources for underrepresented groups in areas including College Park, PG County, and Maryland broadly. Their initiatives include resources for career development, family support &employment, entrepreneurship, healthcare, sustainable housing, and transportation resources for community members. 
 
 The website uses HTML, CSS, and JavaScript. Most of the interface components and screen responsiveness is handled using the Bootstrap v4.0 framework: [Bootstrap v4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
