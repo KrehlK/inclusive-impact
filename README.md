@@ -65,6 +65,7 @@ This is a list of what needs to be improved on the current state of the website,
 
 **Other Suggestions:**
 * Individual pages for each pillar with more details
+* Add or takeaway translate languages based on client needs
 * Add a search function for all pages
 * Fix formatting if needed (the resource page may have some formatting errors)
 
