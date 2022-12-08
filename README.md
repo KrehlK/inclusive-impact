@@ -33,6 +33,7 @@ There is no prewritten tests in this repository. Testing was mainly done through
 
 ## Known Issues
 * The filter and search function on the resources page only works on the page of the pagination. 
+* On the Home page when a user clicks on a pillar it does not do anything (implement a filter function when a user clicks on a pillar).
 * The images used for each page are specifically cropped the same size so that they match. If you plan on replacing the images, make sure that they fit the same dimensions as the current images or else the formatting will be uneven on the page.
 
 ## Future Development
