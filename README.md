@@ -79,4 +79,4 @@ This is a list of what needs to be improved on the current state of the website,
 
 ## Phase III Team Members
 **Developers**
-David Ye
+* David Ye
