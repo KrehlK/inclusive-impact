@@ -71,11 +71,12 @@ This is a list of what needs to be improved on the current state of the website,
 * Add search function in the navigation bar to search through all pages, instead of just within the resources.html page
 * Include UMD IG Logo on navigation bar and as a favicon
 
-## Previous Team Members
+## Phase II Team Members
 **Developers**
 * Chika Chuku
 * Katherine Vo
 * Emily Zheng
 
-
-##joyce 
+## Phase III Team Members
+**Developers**
+David Ye
