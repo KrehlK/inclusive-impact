@@ -53,6 +53,9 @@ This is a list of what needs to be improved on the current state of the website,
 * Change the card photos to a photo from the organization instead of using stock images
 * Determine if the client would like to have mini descriptions of each resource or just a “learn more” button
 * Fix the filter and search function
+  - Both only work on resources.html
+  - Add more filter options like geographic area 
+
 
 **Find Events (findevents.html):**
 * Create one big calendar that updates based on the other calendars given (Prince George’s calendar, UMD calendar, etc.)
