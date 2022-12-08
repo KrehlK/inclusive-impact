@@ -16,7 +16,7 @@ All images, css, and js files are organized within their respective folders insi
 * Desktop 13/15 in.
 
 ## Links
-[Full Developer Manual](https://docs.google.com/document/d/1shYa3CAv9BvmUMrFd6GH0YYDdt7zFlkMq6LDTYGV7Ew/edit?usp=sharing)
+[Full Developer Manual](https://docs.google.com/document/d/1pQ3zvapsvHrsi9-QkyORAAF9IGkDAeKlzDtFBdqqrI8/edit?usp=sharing)
 
 # Developer Manual
 ## How to Install Application & All Dependencies
