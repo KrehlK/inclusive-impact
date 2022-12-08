@@ -3,11 +3,12 @@
 /* This is for all the Google Languages
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-  } */
+  } 
+*/ 
 
 // This is for langauges on line 8 "includedLanguages" only
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({ includedLanguages: 'en,es,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    new google.translate.TranslateElement({ includedLanguages: 'en,es,fr,ar,zh-CN,ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 
 function triggerHtmlEvent(element, eventName) {
@@ -43,6 +44,15 @@ function triggerHtmlEvent(element, eventName) {
                 selectIndex = 3;
                 break;
             case "fr":
+                selectIndex = 1;
+                break;
+            case "ar":
+                selectIndex = 1;
+                break;
+            case "zh-CN":
+                selectIndex = 1;
+                break;
+            case "ko":
                 selectIndex = 1;
                 break;
 
