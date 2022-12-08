@@ -32,7 +32,7 @@ All images, css, and js files are organized within their respective folders insi
 There is no prewritten tests in this repository. Testing was mainly done through viewing the page locally on a browser and inspecting the page to look at the responsiveness of the website.
 
 ## Known Issues
-* The search/filter functions on resources.html page only work on the current page, but not across multiple pages.
+* The filter and search function on the resources page only works on the page of the pagination. 
 * The images used for each page are specifically cropped the same size so that they match. If you plan on replacing the images, make sure that they fit the same dimensions as the current images or else the formatting will be uneven on the page.
 
 ## Future Development
@@ -49,25 +49,25 @@ This is a list of what needs to be improved on the current state of the website,
 
 **Resources (resources.html):**
 * Continue to add individual resources provided by UMD Inclusive Impact (POC: Sammy Popat, David Steele)
-* Have “pagination” and/or “show more” button so that users can scroll through the resource cards
 * Change the card photos to a photo from the organization instead of using stock images
-* Add descriptions of each organization to its card that briefly describes its purpose
-* Fix the filter and search function (Both only work on resources.html, so this fix will depend on whether the team decides to implement pagination or continuous scrolling on one page (through a "Show More" button))
+* Determine if the client would like to have mini descriptions of each resource or just a “learn more” button
+* Fix the filter and search function
 
 **Find Events (findevents.html):**
-* Replace cards that have stock images with the organization’s content (Employ Prince George’s Calendar and Prince George’s Economic Development Corporation)
-* Add additional relevant organization’s links in the community
+* Create one big calendar that updates based on the other calendars given (Prince George’s calendar, UMD calendar, etc.)
+* Have a short description of what the calendar does
+* Create a key to help distinguish which event on the calendar corresponds to the community
+
 
 **About (about.html):**
-* Add data visualization graphics created by Jesse Anderson to portray the organization’s impact in the community and more (POC: Sammy Popat, David Steele)
-* Link each of the partners under “Our Partners” to their official website
+* The page looks good but if you would like to improve the aesthetic of the page (colors, pictures, etc.)
+* If there are new partners add them here
 
 **Other Suggestions:**
 * Individual pages for each pillar with more details
-* Have the website be able to translate text into different languages, especially in Spanish
-* Update the footer to link to future social media accounts, contact information, and other details necessary
-* Add search function in the navigation bar to search through all pages, instead of just within the resources.html page
-* Include UMD IG Logo on navigation bar and as a favicon
+* Add a search function for all pages
+* Fix formatting if needed (the resource page may have some formatting errors)
+
 
 ## Phase II Team Members
 **Developers**
